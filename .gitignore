@@ -1,0 +1,11 @@
+*.suo
+*.dll
+WpfApplication2/bin/Debug/WpfApplication2.exe
+*.pdb
+WpfApplication2/bin/Debug/WpfApplication2.vshost.exe
+*.manifest
+*.force
+*.cache
+WpfApplication2/obj/Debug/WpfApplication2_MarkupCompile.lref
+*.exe
+WpfApplication2/obj/Debug/WpfApplication2.csproj.FileListAbsolute.txt

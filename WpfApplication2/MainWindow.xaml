@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfApplication2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button x:Name="Button"
+                Content="Button"
+                HorizontalAlignment="Left"
+                Margin="186,58,0,0"
+                VerticalAlignment="Top"
+                Width="75" />
+        <local:TextBoxEx x:Name="TextBox"
+                         HorizontalAlignment="Left"
+                         Height="23"
+                         Margin="35,58,0,0"
+                         TextWrapping="Wrap"
+                         Text="TextBox"
+                         VerticalAlignment="Top"
+                         Width="120"/>
+        <Popup x:Name="Popup"
+               StaysOpen="True"
+               PlacementTarget="{Binding ElementName=TextBox}">
+            <ListBox>
+                <Label>Item 1</Label>
+                <Label>Item 2</Label>
+                <Label>Item 3</Label>
+                <Label>Item 4</Label>
+            </ListBox>
+        </Popup>
+    </Grid>
+</Window>
